@@ -1,60 +1,74 @@
-<!DOCTYPE html>
-<html lang="vi">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>B-N-V-T | Badminton Shop</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
+* {
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
 
-<header>
-  <h1>B-N-V-T</h1>
-  <p>Vợt cầu lông chính hãng</p>
-</header>
+body {
+  margin: 0;
+  background: #f6f6f6;
+}
 
-<section class="category">
-  <h2>🏆 TOUR</h2>
-  <div class="grid">
-    <div class="card">
-      <img src="images/vt1.jpg">
-      <h3>Victor 100X</h3>
-      <p class="tag jp">JP</p>
-      <p class="tag percent">98%</p>
-      <p class="price">3.200.000đ</p>
-    </div>
+header {
+  background: #000;
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
 
-    <div class="card">
-      <img src="images/vt2.jpg">
-      <h3>Yonex 88D Pro</h3>
-      <p class="tag sp">SP</p>
-      <p class="price">2.800.000đ</p>
-    </div>
+.category {
+  padding: 10px;
+}
 
-    <div class="card">
-      <img src="images/vt3.jpg">
-      <h3>Lining Halbertec</h3>
-      <p class="tag percent">Keng</p>
-      <p class="price">3.500.000đ</p>
-    </div>
-  </div>
-</section>
+.category h2 {
+  margin: 10px 0;
+}
 
-<section class="category">
-  <h2>🎮 GAME</h2>
-  <div class="grid">
-    <div class="card">
-      <img src="images/vt1.jpg">
-      <h3>Victor DriveX</h3>
-      <p class="tag percent">95%</p>
-      <p class="price">1.200.000đ</p>
-    </div>
-  </div>
-</section>
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 vợt / hàng */
+  gap: 10px;
+}
 
-<footer>
-  <p>📩 Inbox Facebook để đặt hàng</p>
-</footer>
+.card {
+  background: white;
+  border-radius: 10px;
+  padding: 8px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
 
-</body>
-</html>
+.card img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.card h3 {
+  font-size: 14px;
+  margin: 5px 0;
+}
+
+.price {
+  font-weight: bold;
+  color: #d60000;
+}
+
+.tag {
+  display: inline-block;
+  padding: 2px 6px;
+  font-size: 11px;
+  border-radius: 5px;
+  margin: 2px;
+  color: white;
+}
+
+.jp { background: #000; }
+.sp { background: #0066cc; }
+.percent { background: #2ecc71; }
+
+footer {
+  text-align: center;
+  padding: 15px;
+  background: #222;
+  color: white;
+  margin-top: 20px;
+}
